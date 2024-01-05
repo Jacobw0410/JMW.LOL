@@ -24,7 +24,9 @@ const Blog = (props) => {
                   <span>About</span>
                   <span className="blog-nav2">Projects</span>
                   <span className="blog-nav4">About Me</span>
-                  <span className="blog-nav5">Blog</span>
+                  <Link href="/blog1">
+                    <a className="blog-link1">Blog</a>
+                  </Link>
                 </nav>
                 <div className="blog-buttons"></div>
               </div>
@@ -91,40 +93,72 @@ const Blog = (props) => {
         </div>
         <div className="blog-blog">
           <div className="blog-container2">
-            <BlogPostCard1 rootClassName="rootClassName3"></BlogPostCard1>
+            <Link href="/post1">
+              <a className="blog-link2">
+                <BlogPostCard1
+                  rootClassName="rootClassName3"
+                  className="blog-component"
+                ></BlogPostCard1>
+              </a>
+            </Link>
           </div>
           <div className="blog-container3">
-            <BlogPostCard1
-              image_src="https://images.unsplash.com/photo-1465925508512-1e7052bb62e6?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIzfHxjaXR5JTIwY2FifGVufDB8fHx8MTYyNjQ1MDMwNA&amp;ixlib=rb-1.2.1&amp;h=1200"
-              rootClassName="rootClassName2"
-            ></BlogPostCard1>
+            <Link href="/post11">
+              <a className="blog-link3">
+                <BlogPostCard1
+                  image_src="https://images.unsplash.com/photo-1465925508512-1e7052bb62e6?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIzfHxjaXR5JTIwY2FifGVufDB8fHx8MTYyNjQ1MDMwNA&amp;ixlib=rb-1.2.1&amp;h=1200"
+                  rootClassName="rootClassName2"
+                  className="blog-component1"
+                ></BlogPostCard1>
+              </a>
+            </Link>
           </div>
           <div className="blog-container4">
-            <BlogPostCard1
-              image_src="https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE4fHxjaXR5fGVufDB8fHx8MTYyNjQ1MDI4MQ&amp;ixlib=rb-1.2.1&amp;h=1200"
-              rootClassName="rootClassName1"
-            ></BlogPostCard1>
+            <Link href="/post12">
+              <a className="blog-link4">
+                <BlogPostCard1
+                  image_src="https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE4fHxjaXR5fGVufDB8fHx8MTYyNjQ1MDI4MQ&amp;ixlib=rb-1.2.1&amp;h=1200"
+                  rootClassName="rootClassName1"
+                  className="blog-component2"
+                ></BlogPostCard1>
+              </a>
+            </Link>
           </div>
         </div>
         <div className="blog-blog1">
           <div className="blog-container5">
-            <BlogPostCard2
-              profile_src="https://images.unsplash.com/photo-1611232658409-0d98127f237f?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIzfHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTYyNjQ1MDU4MQ&amp;ixlib=rb-1.2.1&amp;h=1200"
-              rootClassName="rootClassName3"
-            ></BlogPostCard2>
+            <Link href="/post13">
+              <a className="blog-link5">
+                <BlogPostCard2
+                  profile_src="https://images.unsplash.com/photo-1611232658409-0d98127f237f?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIzfHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTYyNjQ1MDU4MQ&amp;ixlib=rb-1.2.1&amp;h=1200"
+                  rootClassName="rootClassName3"
+                  className="blog-component3"
+                ></BlogPostCard2>
+              </a>
+            </Link>
           </div>
           <div className="blog-container6">
-            <BlogPostCard2
-              image_src="https://images.unsplash.com/photo-1595565312451-23051ab0666c?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDI0fHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTYyNjQ1MDU4MQ&amp;ixlib=rb-1.2.1&amp;h=1000"
-              profile_src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDExfHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTYyNjQ1MDU4MQ&amp;ixlib=rb-1.2.1&amp;h=1200"
-              rootClassName="rootClassName"
-            ></BlogPostCard2>
+            <Link href="/post14">
+              <a className="blog-link6">
+                <BlogPostCard2
+                  image_src="https://images.unsplash.com/photo-1595565312451-23051ab0666c?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDI0fHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTYyNjQ1MDU4MQ&amp;ixlib=rb-1.2.1&amp;h=1000"
+                  profile_src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDExfHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTYyNjQ1MDU4MQ&amp;ixlib=rb-1.2.1&amp;h=1200"
+                  rootClassName="rootClassName"
+                  className="blog-component4"
+                ></BlogPostCard2>
+              </a>
+            </Link>
           </div>
-          <BlogPostCard2
-            image_src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIxfHxwb3J0cmFpdCUyMHdvbWFuJTIwY29sb3J8ZW58MHx8fHwxNjI2NDUwNTU4&amp;ixlib=rb-1.2.1&amp;h=1000"
-            profile_src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE0fHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTYyNjQ1MDU4MQ&amp;ixlib=rb-1.2.1&amp;h=1200"
-            rootClassName="rootClassName2"
-          ></BlogPostCard2>
+          <Link href="/post15">
+            <a className="blog-link7">
+              <BlogPostCard2
+                image_src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIxfHxwb3J0cmFpdCUyMHdvbWFuJTIwY29sb3J8ZW58MHx8fHwxNjI2NDUwNTU4&amp;ixlib=rb-1.2.1&amp;h=1000"
+                profile_src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE0fHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTYyNjQ1MDU4MQ&amp;ixlib=rb-1.2.1&amp;h=1200"
+                rootClassName="rootClassName2"
+                className="blog-component5"
+              ></BlogPostCard2>
+            </a>
+          </Link>
         </div>
         <footer className="blog-footer">
           <div className="blog-container7">
@@ -147,7 +181,7 @@ const Blog = (props) => {
                 href="https://www.instagram.com/jacob.white0407/"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="blog-link1"
+                className="blog-link8"
               >
                 <svg
                   viewBox="0 0 877.7142857142857 1024"
@@ -180,7 +214,7 @@ const Blog = (props) => {
             padding-top: var(--dl-space-space-oneandhalfunits);
             flex-direction: column;
             padding-bottom: var(--dl-space-space-oneandhalfunits);
-            background-color: #5228f5ff;
+            background-color: #000000;
           }
           .blog-navbar-interactive {
             width: 90%;
@@ -244,11 +278,12 @@ const Blog = (props) => {
           .blog-nav4:hover {
             color: #3d6e70ff;
           }
-          .blog-nav5 {
+          .blog-link1 {
             transition: 0.3s;
             margin-left: var(--dl-space-space-twounits);
+            text-decoration: none;
           }
-          .blog-nav5:hover {
+          .blog-link1:hover {
             color: #3d6e70ff;
           }
           .blog-buttons {
@@ -415,16 +450,34 @@ const Blog = (props) => {
             margin-right: var(--dl-space-space-twounits);
             justify-content: space-between;
           }
+          .blog-link2 {
+            display: contents;
+          }
+          .blog-component {
+            text-decoration: none;
+          }
           .blog-container3 {
             display: flex;
             align-items: center;
             margin-right: var(--dl-space-space-twounits);
             justify-content: space-between;
           }
+          .blog-link3 {
+            display: contents;
+          }
+          .blog-component1 {
+            text-decoration: none;
+          }
           .blog-container4 {
             display: flex;
             align-items: center;
             justify-content: space-between;
+          }
+          .blog-link4 {
+            display: contents;
+          }
+          .blog-component2 {
+            text-decoration: none;
           }
           .blog-blog1 {
             width: 100%;
@@ -442,12 +495,30 @@ const Blog = (props) => {
             flex-direction: column;
             justify-content: space-between;
           }
+          .blog-link5 {
+            display: contents;
+          }
+          .blog-component3 {
+            text-decoration: none;
+          }
           .blog-container6 {
             display: flex;
             align-items: center;
             margin-bottom: var(--dl-space-space-twounits);
             flex-direction: column;
             justify-content: space-between;
+          }
+          .blog-link6 {
+            display: contents;
+          }
+          .blog-component4 {
+            text-decoration: none;
+          }
+          .blog-link7 {
+            display: contents;
+          }
+          .blog-component5 {
+            text-decoration: none;
           }
           .blog-footer {
             width: 100%;
@@ -533,7 +604,7 @@ const Blog = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .blog-link1 {
+          .blog-link8 {
             display: contents;
           }
           .blog-icon10 {
@@ -549,6 +620,9 @@ const Blog = (props) => {
             height: 24px;
           }
           @media (max-width: 991px) {
+            .blog-header {
+              background-color: #d9d9d9;
+            }
             .blog-link {
               color: var(--dl-color-gray-black);
               font-style: normal;
