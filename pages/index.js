@@ -9,7 +9,7 @@ const Home = (props) => {
     <>
       <div className="home-container">
         <Head>
-          <title>Our Single Oryx</title>
+          <title>Jacob White</title>
           <meta property="og:title" content="Our Single Oryx" />
         </Head>
         <div className="home-header">
