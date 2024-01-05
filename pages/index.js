@@ -17,12 +17,18 @@ const Home = (props) => {
             <span className="home-logo">Jacob White</span>
             <div data-thq="thq-navbar-nav" className="home-desktop-menu">
               <nav className="home-links">
-                <span>About</span>
-                <Link href="/projects">
-                  <a className="home-link">Projects</a>
+                <Link href="/about-me">
+                  <a className="home-link">About</a>
                 </Link>
-                <span className="home-nav4">About Me</span>
-                <span className="home-nav5">Blog</span>
+                <Link href="/projects">
+                  <a className="home-link1">Projects</a>
+                </Link>
+                <Link href="/about-me">
+                  <a className="home-link2">About Me</a>
+                </Link>
+                <Link href="/blog">
+                  <a className="home-link3">Blog</a>
+                </Link>
               </nav>
               <div className="home-buttons"></div>
             </div>
@@ -84,9 +90,9 @@ const Home = (props) => {
                 New Programmer Trying to Learn New Things.
               </span>
               <div className="home-btn-group">
-                <button className="home-hero-button2 button">
-                  Learn More →
-                </button>
+                <Link href="/about-me">
+                  <a className="home-link4 button">Learn More →</a>
+                </Link>
               </div>
             </div>
           </div>
@@ -158,7 +164,7 @@ const Home = (props) => {
               Browse through my past projects and see my expertise in action.
             </span>
             <Link href="/projects">
-              <a className="home-link3 button">View Projects</a>
+              <a className="home-link7 button">View Projects</a>
             </Link>
           </div>
         </div>
@@ -172,7 +178,7 @@ const Home = (props) => {
                 <span>Jacob White</span>
                 <br></br>
               </span>
-              <nav className="home-nav1 home-nav1">
+              <nav className="home-nav1">
                 <span className="home-nav12">About</span>
                 <span className="home-nav22">Projects</span>
                 <span className="home-nav31">Social Media</span>
@@ -187,7 +193,7 @@ const Home = (props) => {
                   href="https://www.instagram.com/jacob.white0407/"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="home-link4"
+                  className="home-link8"
                 >
                   <svg
                     viewBox="0 0 877.7142857142857 1024"
@@ -259,33 +265,35 @@ const Home = (props) => {
             flex-direction: row;
             justify-content: center;
           }
-          .home-nav1 {
-            transition: 0.3s;
-          }
-          .home-nav1:hover {
-            color: #3d6e70ff;
-          }
           .home-link {
             transition: 0.3s;
-            margin-left: var(--dl-space-space-twounits);
             text-decoration: none;
           }
           .home-link:hover {
             color: #3d6e70ff;
           }
-          .home-nav4 {
+          .home-link1 {
             transition: 0.3s;
             margin-left: var(--dl-space-space-twounits);
             text-decoration: none;
           }
-          .home-nav4:hover {
+          .home-link1:hover {
             color: #3d6e70ff;
           }
-          .home-nav5 {
+          .home-link2 {
             transition: 0.3s;
             margin-left: var(--dl-space-space-twounits);
+            text-decoration: none;
           }
-          .home-nav5:hover {
+          .home-link2:hover {
+            color: #3d6e70ff;
+          }
+          .home-link3 {
+            transition: 0.3s;
+            margin-left: var(--dl-space-space-twounits);
+            text-decoration: none;
+          }
+          .home-link3:hover {
             color: #3d6e70ff;
           }
           .home-buttons {
@@ -462,7 +470,7 @@ const Home = (props) => {
             align-items: center;
             flex-direction: row;
           }
-          .home-hero-button2 {
+          .home-link4 {
             color: var(--dl-color-gray-white);
             transition: 0.3s;
             font-weight: bold;
@@ -474,7 +482,7 @@ const Home = (props) => {
             text-decoration: none;
             background-color: transparent;
           }
-          .home-hero-button2:hover {
+          .home-link4:hover {
             border-color: var(--dl-color-gray-white);
           }
           .home-details {
@@ -632,7 +640,7 @@ const Home = (props) => {
             text-align: center;
             line-height: 1.6;
           }
-          .home-link3 {
+          .home-link7 {
             color: var(--dl-color-gray-white);
             transition: 0.3s;
             font-weight: 700;
@@ -645,7 +653,7 @@ const Home = (props) => {
             text-decoration: none;
             background-color: #291477ff;
           }
-          .home-link3:hover {
+          .home-link7:hover {
             border-color: rgba(41, 20, 119, 0.9);
             background-color: rgba(41, 20, 119, 0.9);
           }
@@ -759,7 +767,7 @@ const Home = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .home-link4 {
+          .home-link8 {
             display: contents;
           }
           .home-icon10 {
@@ -947,7 +955,7 @@ const Home = (props) => {
             .home-btn-group {
               flex-direction: column;
             }
-            .home-hero-button2 {
+            .home-link4 {
               margin-top: var(--dl-space-space-unit);
               margin-left: 0px;
             }
